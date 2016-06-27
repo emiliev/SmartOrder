@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD46EFDC1D217FEE00B94B51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46EFDB1D217FEE00B94B51 /* AppDelegate.swift */; };
+		BD46EFDE1D217FEE00B94B51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46EFDD1D217FEE00B94B51 /* ViewController.swift */; };
+		BD46EFE11D217FEE00B94B51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD46EFDF1D217FEE00B94B51 /* Main.storyboard */; };
+		BD46EFE31D217FEE00B94B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD46EFE21D217FEE00B94B51 /* Assets.xcassets */; };
+		BD46EFE61D217FEE00B94B51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD46EFE41D217FEE00B94B51 /* LaunchScreen.storyboard */; };
+		BD46EFF11D217FEE00B94B51 /* Smart_OrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46EFF01D217FEE00B94B51 /* Smart_OrderTests.swift */; };
+		BD46EFFC1D217FEE00B94B51 /* Smart_OrderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46EFFB1D217FEE00B94B51 /* Smart_OrderUITests.swift */; };
+		BD46F00A1D21822100B94B51 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46F0091D21822100B94B51 /* Product.swift */; };
+		BD46F0101D21881600B94B51 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46F00F1D21881600B94B51 /* Order.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD46EFED1D217FEE00B94B51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD46EFD01D217FEE00B94B51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD46EFD71D217FEE00B94B51;
+			remoteInfo = "Smart Order";
+		};
+		BD46EFF81D217FEE00B94B51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD46EFD01D217FEE00B94B51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD46EFD71D217FEE00B94B51;
+			remoteInfo = "Smart Order";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD46EFD81D217FEE00B94B51 /* Smart Order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Order.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD46EFDB1D217FEE00B94B51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD46EFDD1D217FEE00B94B51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD46EFE01D217FEE00B94B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD46EFE21D217FEE00B94B51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD46EFE51D217FEE00B94B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD46EFE71D217FEE00B94B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD46EFEC1D217FEE00B94B51 /* Smart OrderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart OrderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD46EFF01D217FEE00B94B51 /* Smart_OrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_OrderTests.swift; sourceTree = "<group>"; };
+		BD46EFF21D217FEE00B94B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD46EFF71D217FEE00B94B51 /* Smart OrderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart OrderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD46EFFB1D217FEE00B94B51 /* Smart_OrderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_OrderUITests.swift; sourceTree = "<group>"; };
+		BD46EFFD1D217FEE00B94B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD46F0091D21822100B94B51 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		BD46F00F1D21881600B94B51 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD46EFD51D217FEE00B94B51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD46EFE91D217FEE00B94B51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD46EFF41D217FEE00B94B51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD46EFCF1D217FEE00B94B51 = {
+			isa = PBXGroup;
+			children = (
+				BD46EFDA1D217FEE00B94B51 /* Smart Order */,
+				BD46EFEF1D217FEE00B94B51 /* Smart OrderTests */,
+				BD46EFFA1D217FEE00B94B51 /* Smart OrderUITests */,
+				BD46EFD91D217FEE00B94B51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD46EFD91D217FEE00B94B51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD46EFD81D217FEE00B94B51 /* Smart Order.app */,
+				BD46EFEC1D217FEE00B94B51 /* Smart OrderTests.xctest */,
+				BD46EFF71D217FEE00B94B51 /* Smart OrderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD46EFDA1D217FEE00B94B51 /* Smart Order */ = {
+			isa = PBXGroup;
+			children = (
+				BD46F00B1D21822700B94B51 /* Model */,
+				BD46F00C1D21823400B94B51 /* Controller */,
+				BD46F00D1D21823B00B94B51 /* View */,
+				BD46F00E1D21824A00B94B51 /* Stuff */,
+			);
+			path = "Smart Order";
+			sourceTree = "<group>";
+		};
+		BD46EFEF1D217FEE00B94B51 /* Smart OrderTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD46EFF01D217FEE00B94B51 /* Smart_OrderTests.swift */,
+				BD46EFF21D217FEE00B94B51 /* Info.plist */,
+			);
+			path = "Smart OrderTests";
+			sourceTree = "<group>";
+		};
+		BD46EFFA1D217FEE00B94B51 /* Smart OrderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD46EFFB1D217FEE00B94B51 /* Smart_OrderUITests.swift */,
+				BD46EFFD1D217FEE00B94B51 /* Info.plist */,
+			);
+			path = "Smart OrderUITests";
+			sourceTree = "<group>";
+		};
+		BD46F00B1D21822700B94B51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD46F0091D21822100B94B51 /* Product.swift */,
+				BD46F00F1D21881600B94B51 /* Order.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BD46F00C1D21823400B94B51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD46EFDB1D217FEE00B94B51 /* AppDelegate.swift */,
+				BD46EFDD1D217FEE00B94B51 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BD46F00D1D21823B00B94B51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD46EFE41D217FEE00B94B51 /* LaunchScreen.storyboard */,
+				BD46EFDF1D217FEE00B94B51 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BD46F00E1D21824A00B94B51 /* Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				BD46EFE21D217FEE00B94B51 /* Assets.xcassets */,
+				BD46EFE71D217FEE00B94B51 /* Info.plist */,
+			);
+			name = Stuff;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD46EFD71D217FEE00B94B51 /* Smart Order */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD46F0001D217FEE00B94B51 /* Build configuration list for PBXNativeTarget "Smart Order" */;
+			buildPhases = (
+				BD46EFD41D217FEE00B94B51 /* Sources */,
+				BD46EFD51D217FEE00B94B51 /* Frameworks */,
+				BD46EFD61D217FEE00B94B51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smart Order";
+			productName = "Smart Order";
+			productReference = BD46EFD81D217FEE00B94B51 /* Smart Order.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD46EFEB1D217FEE00B94B51 /* Smart OrderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD46F0031D217FEE00B94B51 /* Build configuration list for PBXNativeTarget "Smart OrderTests" */;
+			buildPhases = (
+				BD46EFE81D217FEE00B94B51 /* Sources */,
+				BD46EFE91D217FEE00B94B51 /* Frameworks */,
+				BD46EFEA1D217FEE00B94B51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD46EFEE1D217FEE00B94B51 /* PBXTargetDependency */,
+			);
+			name = "Smart OrderTests";
+			productName = "Smart OrderTests";
+			productReference = BD46EFEC1D217FEE00B94B51 /* Smart OrderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD46EFF61D217FEE00B94B51 /* Smart OrderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD46F0061D217FEE00B94B51 /* Build configuration list for PBXNativeTarget "Smart OrderUITests" */;
+			buildPhases = (
+				BD46EFF31D217FEE00B94B51 /* Sources */,
+				BD46EFF41D217FEE00B94B51 /* Frameworks */,
+				BD46EFF51D217FEE00B94B51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD46EFF91D217FEE00B94B51 /* PBXTargetDependency */,
+			);
+			name = "Smart OrderUITests";
+			productName = "Smart OrderUITests";
+			productReference = BD46EFF71D217FEE00B94B51 /* Smart OrderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD46EFD01D217FEE00B94B51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Emil Iliev";
+				TargetAttributes = {
+					BD46EFD71D217FEE00B94B51 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PXEG9GD6UJ;
+					};
+					BD46EFEB1D217FEE00B94B51 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PXEG9GD6UJ;
+						TestTargetID = BD46EFD71D217FEE00B94B51;
+					};
+					BD46EFF61D217FEE00B94B51 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PXEG9GD6UJ;
+						TestTargetID = BD46EFD71D217FEE00B94B51;
+					};
+				};
+			};
+			buildConfigurationList = BD46EFD31D217FEE00B94B51 /* Build configuration list for PBXProject "Smart Order" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD46EFCF1D217FEE00B94B51;
+			productRefGroup = BD46EFD91D217FEE00B94B51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD46EFD71D217FEE00B94B51 /* Smart Order */,
+				BD46EFEB1D217FEE00B94B51 /* Smart OrderTests */,
+				BD46EFF61D217FEE00B94B51 /* Smart OrderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD46EFD61D217FEE00B94B51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD46EFE61D217FEE00B94B51 /* LaunchScreen.storyboard in Resources */,
+				BD46EFE31D217FEE00B94B51 /* Assets.xcassets in Resources */,
+				BD46EFE11D217FEE00B94B51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD46EFEA1D217FEE00B94B51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD46EFF51D217FEE00B94B51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD46EFD41D217FEE00B94B51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD46EFDE1D217FEE00B94B51 /* ViewController.swift in Sources */,
+				BD46EFDC1D217FEE00B94B51 /* AppDelegate.swift in Sources */,
+				BD46F0101D21881600B94B51 /* Order.swift in Sources */,
+				BD46F00A1D21822100B94B51 /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD46EFE81D217FEE00B94B51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD46EFF11D217FEE00B94B51 /* Smart_OrderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD46EFF31D217FEE00B94B51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD46EFFC1D217FEE00B94B51 /* Smart_OrderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD46EFEE1D217FEE00B94B51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD46EFD71D217FEE00B94B51 /* Smart Order */;
+			targetProxy = BD46EFED1D217FEE00B94B51 /* PBXContainerItemProxy */;
+		};
+		BD46EFF91D217FEE00B94B51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD46EFD71D217FEE00B94B51 /* Smart Order */;
+			targetProxy = BD46EFF81D217FEE00B94B51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD46EFDF1D217FEE00B94B51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD46EFE01D217FEE00B94B51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD46EFE41D217FEE00B94B51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD46EFE51D217FEE00B94B51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD46EFFE1D217FEE00B94B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD46EFFF1D217FEE00B94B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD46F0011D217FEE00B94B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Smart Order/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EM.Smart-Order";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD46F0021D217FEE00B94B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Smart Order/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EM.Smart-Order";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BD46F0041D217FEE00B94B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smart OrderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EM.Smart-OrderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Order.app/Smart Order";
+			};
+			name = Debug;
+		};
+		BD46F0051D217FEE00B94B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Smart OrderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EM.Smart-OrderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart Order.app/Smart Order";
+			};
+			name = Release;
+		};
+		BD46F0071D217FEE00B94B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Smart OrderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EM.Smart-OrderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smart Order";
+			};
+			name = Debug;
+		};
+		BD46F0081D217FEE00B94B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Smart OrderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EM.Smart-OrderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Smart Order";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD46EFD31D217FEE00B94B51 /* Build configuration list for PBXProject "Smart Order" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD46EFFE1D217FEE00B94B51 /* Debug */,
+				BD46EFFF1D217FEE00B94B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD46F0001D217FEE00B94B51 /* Build configuration list for PBXNativeTarget "Smart Order" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD46F0011D217FEE00B94B51 /* Debug */,
+				BD46F0021D217FEE00B94B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BD46F0031D217FEE00B94B51 /* Build configuration list for PBXNativeTarget "Smart OrderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD46F0041D217FEE00B94B51 /* Debug */,
+				BD46F0051D217FEE00B94B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BD46F0061D217FEE00B94B51 /* Build configuration list for PBXNativeTarget "Smart OrderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD46F0071D217FEE00B94B51 /* Debug */,
+				BD46F0081D217FEE00B94B51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD46EFD01D217FEE00B94B51 /* Project object */;
+}
