@@ -22,17 +22,17 @@
                                 <rect key="frame" x="-4" y="64" width="383" height="563"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jWh-IN-8tZ">
-                                    <size key="itemSize" width="179" height="182"/>
+                                    <size key="itemSize" width="114" height="115"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="YZM-vE-lac">
-                                        <rect key="frame" x="0.0" y="64" width="179" height="182"/>
+                                        <rect key="frame" x="0.0" y="64" width="114" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="179" height="182"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="114" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myL-Q8-4Jl">
@@ -49,6 +49,13 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="myL-Q8-4Jl" secondAttribute="trailing" constant="2" id="8al-aj-afe"/>
+                                            <constraint firstItem="lJy-i6-byN" firstAttribute="centerY" secondItem="YZM-vE-lac" secondAttribute="centerY" id="Etb-gu-J52"/>
+                                            <constraint firstItem="myL-Q8-4Jl" firstAttribute="leading" secondItem="YZM-vE-lac" secondAttribute="leadingMargin" constant="2" id="e09-JZ-yWN"/>
+                                            <constraint firstItem="lJy-i6-byN" firstAttribute="centerX" secondItem="YZM-vE-lac" secondAttribute="centerX" id="kei-Ji-Kqm"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="myL-Q8-4Jl" secondAttribute="bottom" constant="-8" id="vQg-xm-ddY"/>
+                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
