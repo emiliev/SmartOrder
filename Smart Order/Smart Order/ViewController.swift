@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, NSURLSessionDelegate{
 
-    let url = "https://cryptic-mountain-25848.herokuapp.com/api/products.php"
+//    let url = "https://cryptic-mountain-25848.herokuapp.com/api/products.php"
+    let url = "http://localhost/SmartOrder/Smart-Order-Services/api/products.php"
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {

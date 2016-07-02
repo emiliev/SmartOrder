@@ -10,7 +10,7 @@ import UIKit
 
 class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     private let kSectionNumber = 2
-    
+    private let url = "http://localhost/SmartOrder/Smart-Order-Services/api/orders.php"
     var productNames = []
     var productQuantities = []
     @IBOutlet weak var tableView: UITableView!
@@ -83,6 +83,35 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return section == 0 ? "" : "Bill"
     }
+    
+    @IBAction func makeOrder(sender: AnyObject) {
+    
+        if(self.productNames.count == 0){
+            let alert = UIAlertController(title: title, message: "No products to order!", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }else{
+            
+            //device id : >
+            let result = NSMutableDictionary()
+            let table_id = UIDevice.currentDevice().identifierForVendor?.UUIDString
+            let dict = Order.sharedInstance.prepareForOrder()
+            
+            result["table_id"] = 2 // WTF :D ?
+            result["products"] = dict
+            do{
+                let jsonData = try NSJSONSerialization.dataWithJSONObject(result, options: .PrettyPrinted)
+                let jsonString = NSString(data: jsonData, encoding: NSUTF8StringEncoding)! as String
+                let request = RequestManager(requestUrl: url)
+                request.postRequest(jsonString)
+            }
+            catch let error as NSError{
+                print(error)
+            }
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 

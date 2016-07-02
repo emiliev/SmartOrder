@@ -15,22 +15,30 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1P-ke-ccs">
-                        <rect key="frame" x="270" y="11" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJF-du-4Dw">
+                        <rect key="frame" x="13" y="13" width="236" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJF-du-4Dw">
-                        <rect key="frame" x="13" y="13" width="38" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1P-ke-ccs">
+                        <rect key="frame" x="254" y="11" width="58" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="58" id="hWe-zV-7lm"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="P1P-ke-ccs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="wDv-gf-z7u"/>
-                    <constraint firstItem="P1P-ke-ccs" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="wGR-wW-2uM"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FJF-du-4Dw" secondAttribute="bottom" constant="5" id="9Vg-Mf-V4I"/>
+                    <constraint firstItem="P1P-ke-ccs" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Gt9-HA-az9"/>
+                    <constraint firstItem="FJF-du-4Dw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Oc5-0N-8A3"/>
+                    <constraint firstItem="FJF-du-4Dw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="Wo9-NW-LKz"/>
+                    <constraint firstItem="P1P-ke-ccs" firstAttribute="leading" secondItem="FJF-du-4Dw" secondAttribute="trailing" constant="5" id="cTn-C1-kVN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="P1P-ke-ccs" secondAttribute="bottom" constant="3" id="kuN-Ac-M31"/>
+                    <constraint firstItem="P1P-ke-ccs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="oEU-dg-nV7"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

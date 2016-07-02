@@ -24,14 +24,18 @@ class RequestManager: NSObject, NSURLSessionDelegate {
                 print(error)
                 return
             }
+            print("test?",response)
             let jsonParse = JsonParser(withData: data!)
             jsonParse.parse()
         }
         task.resume()
     }
     
-    func postRequest(){
-    
+    func postRequest(text: String){
+        let request = NSMutableURLRequest(URL: NSURL(string: self.url)!)
+        request.HTTPMethod = "POST"
+        request.HTTPBody = text.dataUsingEncoding(NSUTF8StringEncoding)
+        configSession(request)
     }
     
     func getRequest(){
