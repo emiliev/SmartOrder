@@ -38,7 +38,6 @@ class ProductCustomCell: UITableViewCell {
             if(currentOrder.removeProduct(self.productID)){
                 print("deleted product from order list")
             }
-            
         }
         //Add product in order list
         else{
