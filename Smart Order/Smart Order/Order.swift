@@ -17,8 +17,8 @@ class Order{
     //preven cloning
     private init(){}
     
+    //dict of table order
     func showOrderList() -> NSMutableDictionary{
-        
         let orderList = NSMutableDictionary()
         for item in products{
             if (orderList.objectForKey(item.getDescription()) != nil){
@@ -29,7 +29,6 @@ class Order{
                 orderList.setValue(1, forKey: item.getDescription())
             }
         }
-        
         return orderList
     }
     
@@ -40,6 +39,15 @@ class Order{
         }
         return false
     }
-    
-    
+
+    func removeProduct(productID: Int) -> Bool{
+        for (index,item) in self.products.enumerate(){
+            if item.getID() == productID{
+                self.products.removeAtIndex(index)
+                return true
+            }
+        }
+        return false
+    }
+
 }

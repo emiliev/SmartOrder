@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let device_id = UIDevice.currentDevice().identifierForVendor?.UUIDString
+        print(device_id, "asdas")
         return true
     }
 
