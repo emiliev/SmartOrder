@@ -23,6 +23,12 @@
 		BD7FFC491D243B9700600D34 /* ProductCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD7FFC471D243B9700600D34 /* ProductCustomCell.xib */; };
 		BD832D901D2470770026E385 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD832D8F1D2470770026E385 /* RequestManager.swift */; };
 		BDA55CAB1D24F09E00E7D1DA /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA55CAA1D24F09E00E7D1DA /* JsonParser.swift */; };
+		BDE1F52E1D27BE5900B3E648 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE1F52D1D27BE5900B3E648 /* MainViewController.swift */; };
+		BDE1F5301D27BF5800B3E648 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE1F52F1D27BF5800B3E648 /* OrderViewController.swift */; };
+		BDE1F5331D27C4B200B3E648 /* OrderCusomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE1F5311D27C4B200B3E648 /* OrderCusomCell.swift */; };
+		BDE1F5341D27C4B200B3E648 /* OrderCusomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDE1F5321D27C4B200B3E648 /* OrderCusomCell.xib */; };
+		BDE1F5361D27C5E200B3E648 /* QuantityCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE1F5351D27C5E200B3E648 /* QuantityCustomView.swift */; };
+		BDE1F5391D27C61F00B3E648 /* QuantityCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDE1F5381D27C61F00B3E648 /* QuantityCustomView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,12 @@
 		BD7FFC471D243B9700600D34 /* ProductCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCustomCell.xib; sourceTree = "<group>"; };
 		BD832D8F1D2470770026E385 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		BDA55CAA1D24F09E00E7D1DA /* JsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		BDE1F52D1D27BE5900B3E648 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BDE1F52F1D27BF5800B3E648 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		BDE1F5311D27C4B200B3E648 /* OrderCusomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCusomCell.swift; sourceTree = "<group>"; };
+		BDE1F5321D27C4B200B3E648 /* OrderCusomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCusomCell.xib; sourceTree = "<group>"; };
+		BDE1F5351D27C5E200B3E648 /* QuantityCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuantityCustomView.swift; sourceTree = "<group>"; };
+		BDE1F5381D27C61F00B3E648 /* QuantityCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuantityCustomView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +173,10 @@
 				BD46EFDD1D217FEE00B94B51 /* ViewController.swift */,
 				BD26D39E1D239BE3007EF72D /* CategoryViewController.swift */,
 				BD7FFC461D243B9700600D34 /* ProductCustomCell.swift */,
+				BDE1F52D1D27BE5900B3E648 /* MainViewController.swift */,
+				BDE1F52F1D27BF5800B3E648 /* OrderViewController.swift */,
+				BDE1F5311D27C4B200B3E648 /* OrderCusomCell.swift */,
+				BDE1F5371D27C5F700B3E648 /* CustomView */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -171,6 +187,8 @@
 				BD46EFE41D217FEE00B94B51 /* LaunchScreen.storyboard */,
 				BD46EFDF1D217FEE00B94B51 /* Main.storyboard */,
 				BD7FFC471D243B9700600D34 /* ProductCustomCell.xib */,
+				BDE1F5321D27C4B200B3E648 /* OrderCusomCell.xib */,
+				BDE1F5381D27C61F00B3E648 /* QuantityCustomView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -182,6 +200,14 @@
 				BD46EFE71D217FEE00B94B51 /* Info.plist */,
 			);
 			name = Stuff;
+			sourceTree = "<group>";
+		};
+		BDE1F5371D27C5F700B3E648 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				BDE1F5351D27C5E200B3E648 /* QuantityCustomView.swift */,
+			);
+			name = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,9 +317,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE1F5391D27C61F00B3E648 /* QuantityCustomView.xib in Resources */,
 				BD46EFE61D217FEE00B94B51 /* LaunchScreen.storyboard in Resources */,
 				BD46EFE31D217FEE00B94B51 /* Assets.xcassets in Resources */,
 				BD7FFC491D243B9700600D34 /* ProductCustomCell.xib in Resources */,
+				BDE1F5341D27C4B200B3E648 /* OrderCusomCell.xib in Resources */,
 				BD46EFE11D217FEE00B94B51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,15 +348,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD26D39B1D239786007EF72D /* Menu.swift in Sources */,
+				BDE1F52E1D27BE5900B3E648 /* MainViewController.swift in Sources */,
 				BD46EFDE1D217FEE00B94B51 /* ViewController.swift in Sources */,
 				BD26D39F1D239BE3007EF72D /* CategoryViewController.swift in Sources */,
+				BDE1F5361D27C5E200B3E648 /* QuantityCustomView.swift in Sources */,
 				BD26D3991D239517007EF72D /* Category.swift in Sources */,
 				BD46EFDC1D217FEE00B94B51 /* AppDelegate.swift in Sources */,
+				BDE1F5331D27C4B200B3E648 /* OrderCusomCell.swift in Sources */,
 				BD46F0101D21881600B94B51 /* Order.swift in Sources */,
 				BDA55CAB1D24F09E00E7D1DA /* JsonParser.swift in Sources */,
 				BD832D901D2470770026E385 /* RequestManager.swift in Sources */,
 				BD7FFC481D243B9700600D34 /* ProductCustomCell.swift in Sources */,
 				BD46F00A1D21822100B94B51 /* Product.swift in Sources */,
+				BDE1F5301D27BF5800B3E648 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

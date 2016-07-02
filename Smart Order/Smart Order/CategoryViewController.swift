@@ -46,14 +46,5 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 95
     }
-
-    @IBAction func orderButton(sender: AnyObject) {
-        
-        
-    }
  
-    @IBAction func addInStock(sender: AnyObject) {
-        
-        
-    }
 }

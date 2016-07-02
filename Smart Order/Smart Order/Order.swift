@@ -49,5 +49,9 @@ class Order{
         }
         return false
     }
+    
+    func orderLength() -> Int{
+        return self.products.count
+    }
 
 }
