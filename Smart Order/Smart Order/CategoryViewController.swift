@@ -10,9 +10,9 @@ import UIKit
 
 class CategoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var tableView: UITableView!
-    var menu: Category? = nil
     
+    var menu: Category? = nil
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
