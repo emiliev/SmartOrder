@@ -22,43 +22,44 @@
                                 <rect key="frame" x="-4" y="64" width="383" height="563"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jWh-IN-8tZ">
-                                    <size key="itemSize" width="179" height="182"/>
+                                    <size key="itemSize" width="114" height="115"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="YZM-vE-lac">
-                                        <rect key="frame" x="0.0" y="64" width="179" height="182"/>
+                                        <rect key="frame" x="0.0" y="64" width="114" height="115"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="179" height="182"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="114" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h6h-JW-8v0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="179" height="182"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lJy-i6-byN">
-                                                            <rect key="frame" x="16" y="8" width="147" height="150"/>
-                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="147" id="9kh-LK-OyQ"/>
-                                                                <constraint firstAttribute="height" constant="150" id="zHn-HS-CuZ"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myL-Q8-4Jl">
-                                                            <rect key="frame" x="0.0" y="161" width="179" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
+                                                <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lJy-i6-byN">
+                                                    <rect key="frame" x="19" y="20" width="75" height="75"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="LGU-0H-H0w"/>
+                                                        <constraint firstAttribute="height" constant="75" id="aCK-HU-r6E"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="myL-Q8-4Jl">
+                                                    <rect key="frame" x="10" y="98" width="94" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="myL-Q8-4Jl" secondAttribute="trailing" constant="2" id="8al-aj-afe"/>
+                                            <constraint firstItem="lJy-i6-byN" firstAttribute="centerY" secondItem="YZM-vE-lac" secondAttribute="centerY" id="Etb-gu-J52"/>
+                                            <constraint firstItem="myL-Q8-4Jl" firstAttribute="leading" secondItem="YZM-vE-lac" secondAttribute="leadingMargin" constant="2" id="e09-JZ-yWN"/>
+                                            <constraint firstItem="lJy-i6-byN" firstAttribute="centerX" secondItem="YZM-vE-lac" secondAttribute="centerX" id="kei-Ji-Kqm"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="myL-Q8-4Jl" secondAttribute="bottom" constant="-8" id="vQg-xm-ddY"/>
+                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

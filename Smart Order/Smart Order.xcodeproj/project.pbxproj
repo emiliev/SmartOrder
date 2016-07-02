@@ -175,10 +175,10 @@
 			children = (
 				BDE1F52D1D27BE5900B3E648 /* MainViewController.swift */,
 				BD46EFDB1D217FEE00B94B51 /* AppDelegate.swift */,
-				BDE1F53B1D27D36500B3E648 /* CustomCell */,
 				BD46EFDD1D217FEE00B94B51 /* ViewController.swift */,
 				BD26D39E1D239BE3007EF72D /* CategoryViewController.swift */,
 				BDE1F52F1D27BF5800B3E648 /* OrderViewController.swift */,
+				BDE1F53B1D27D36500B3E648 /* CustomCell */,
 				BDE1F5371D27C5F700B3E648 /* CustomView */,
 			);
 			name = Controller;
