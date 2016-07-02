@@ -45,8 +45,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let imgView = cell.viewWithTag(100) as! UIImageView
         imgView.layer.cornerRadius = 5
         imgView.layer.masksToBounds = true
-        imgView.image = UIImage(named: "cake")
-        label.text = "Hello \(indexPath.row)"
+        let categoryName = Menu.sharedInstance.categoryAtIndex(indexPath.row)?.getName()
+        imgView.image = UIImage(named: categoryName!)
+        label.text = categoryName
         return cell
     }
 
