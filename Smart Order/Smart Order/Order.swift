@@ -21,12 +21,12 @@ class Order{
     func showOrderList() -> NSMutableDictionary{
         let orderList = NSMutableDictionary()
         for item in products{
-            if (orderList.objectForKey(item.getDescription()) != nil){
-                let newValue = (orderList[item.getDescription()] as! Int) + 1
-                orderList[item.getDescription()] = newValue
+            if (orderList.objectForKey(item.getName()) != nil){
+                let newValue = (orderList[item.getName()] as! Int) + 1
+                orderList[item.getName()] = newValue
             }
             else{
-                orderList.setValue(1, forKey: item.getDescription())
+                orderList.setValue(1, forKey: item.getName())
             }
         }
         return orderList
@@ -52,6 +52,18 @@ class Order{
     
     func orderLength() -> Int{
         return self.products.count
+    }
+    
+    func productAtIndex(index: Int) -> Product{
+        return self.products[index]
+    }
+    
+    func calculateBill() -> Float{
+        var sum: Float = 0.0
+        for item in products{
+            sum += item.getPrice()
+        }
+        return sum
     }
 
 }

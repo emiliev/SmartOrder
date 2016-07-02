@@ -1,5 +1,5 @@
 //
-//  OrderCusomCell.swift
+//  OrderCustomCell.swift
 //  Smart Order
 //
 //  Created by Emil Iliev on 7/2/16.
@@ -8,8 +8,11 @@
 
 import UIKit
 
-class OrderCusomCell: UITableViewCell {
+class OrderCustomCell: UITableViewCell {
 
+    
+    @IBOutlet weak var productName: UILabel!
+    @IBOutlet weak var quantity: QuantityCustomView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
