@@ -22,17 +22,17 @@
                                 <rect key="frame" x="-4" y="64" width="383" height="563"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jWh-IN-8tZ">
-                                    <size key="itemSize" width="179" height="220"/>
+                                    <size key="itemSize" width="179" height="182"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="YZM-vE-lac">
-                                        <rect key="frame" x="0.0" y="64" width="179" height="220"/>
+                                        <rect key="frame" x="0.0" y="64" width="179" height="182"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="179" height="220"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="179" height="182"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myL-Q8-4Jl">
@@ -49,20 +49,11 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="lJy-i6-byN" firstAttribute="leading" secondItem="YZM-vE-lac" secondAttribute="leadingMargin" id="0Jw-Mg-c80"/>
-                                            <constraint firstItem="myL-Q8-4Jl" firstAttribute="top" secondItem="lJy-i6-byN" secondAttribute="bottom" constant="9" id="3GO-8U-5de"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="lJy-i6-byN" secondAttribute="trailing" id="OOm-NU-8co"/>
-                                            <constraint firstItem="myL-Q8-4Jl" firstAttribute="leading" secondItem="YZM-vE-lac" secondAttribute="leadingMargin" constant="-8" id="R6b-sx-yAY"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="myL-Q8-4Jl" secondAttribute="bottom" constant="-8" id="Tsc-hz-ahc"/>
-                                            <constraint firstItem="lJy-i6-byN" firstAttribute="top" secondItem="YZM-vE-lac" secondAttribute="topMargin" constant="-8" id="ozy-Sx-02e"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="myL-Q8-4Jl" secondAttribute="trailing" constant="-8" id="xyA-4a-fGo"/>
-                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="iIo-iv-F5b" firstAttribute="top" secondItem="aad-yZ-v2h" secondAttribute="bottom" constant="40" id="4eI-6e-JMe"/>
                             <constraint firstItem="aad-yZ-v2h" firstAttribute="leading" secondItem="aZS-0c-LmI" secondAttribute="leadingMargin" constant="-20" id="8ec-68-80U"/>
