@@ -10,6 +10,7 @@ import Foundation
 
 class Menu{
     var categories: [Category]
+    let categoriesNames = ["Salads", "Starters", "Soups", "Main Dishes", "Pizza", "Non-Alcohol", "Alcohol", "Desserts"]
     static let sharedInstance = Menu()
     
     private init(){
@@ -38,15 +39,17 @@ class Menu{
     
     func createMenu(data: NSDictionary){
         let menu = data["products"] as? NSArray
+        for i in 0..<self.categoriesNames.count {
+            let category = Category(newName: self.categoriesNames[i])
+            self.addCategory(category)
+        }
+        
         for item in menu!{
             let menuItem = Product.productFromData(item as! NSDictionary)
             let categoryNumber = (menuItem?.getCategory())!
-            while (self.menuLength() <= categoryNumber){
-                let newCategory = Category(newName: "Test")
-                self.addCategory(newCategory)
-            }
             self.categories[categoryNumber].addProduct(menuItem)
         }
+        
     }
     
     func getProductByID(productID: Int) -> Product?{

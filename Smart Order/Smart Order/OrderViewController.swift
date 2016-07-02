@@ -27,10 +27,13 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     
-    //MAK: - TableView
-    
+    //MARK: - TableView
+//    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
+        let cellID = "ProductCustomCell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) as! ProductCustomCell
+        cell.selectionStyle = .None
+        return cell
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
