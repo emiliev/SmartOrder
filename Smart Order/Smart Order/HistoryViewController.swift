@@ -10,8 +10,10 @@ import UIKit
 
 class HistoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var orderURL = "http://localhost/SmartOrder/Smart-Order-Services/api/orders.php?table="
-    var tableURL = "http://localhost/SmartOrder/Smart-Order-Services/api/tables.php?name="
+//    let orderURL = "http://localhost/SmartOrder/Smart-Order-Services/api/orders.php?table="
+//    let tableURL = "http://localhost/SmartOrder/Smart-Order-Services/api/tables.php?name="
+    let orderURL = "https://cryptic-mountain-25848.herokuapp.com/api/orders.php?table="
+    let tableURL = "https://cryptic-mountain-25848.herokuapp.com/api/tables.php?name="
     var tableID: Int? = nil
     var orderdProducts: [(Int, Int)] = []
     var totalSum = 0.0
