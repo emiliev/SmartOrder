@@ -24,9 +24,14 @@ class RequestManager: NSObject, NSURLSessionDelegate {
                 print(error)
                 return
             }
-            print("test?",response)
-            let jsonParse = JsonParser(withData: data!)
-            jsonParse.parse()
+
+            do {
+                let json = try  NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? NSDictionary
+                NSNotificationCenter.defaultCenter().postNotificationName("SmartOrderMenu", object: json)
+            }
+            catch{
+                   print("Error serializing JSON \(error)")
+            }
         }
         task.resume()
     }
@@ -42,4 +47,27 @@ class RequestManager: NSObject, NSURLSessionDelegate {
         let request = NSURLRequest(URL: NSURL(string: self.url)!)
         configSession(request)
     }
+    
+    func loadOrder(){
+        let request = NSURLRequest(URL: NSURL(string: self.url)!)
+        let sessionConfig = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let session = NSURLSession(configuration: sessionConfig, delegate: self, delegateQueue: NSOperationQueue.mainQueue())
+        let task = session.dataTaskWithRequest(request){
+            (let data, let response, let error) in
+            guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
+                print(error)
+                return
+            }
+            
+            do {
+                let json = try  NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? NSDictionary
+                NSNotificationCenter.defaultCenter().postNotificationName("LoadOrder", object: json)
+            }
+            catch{
+                print("Error serializing JSON \(error)")
+            }
+        }
+        task.resume()
+    }
+    
 }
