@@ -10,7 +10,8 @@ import UIKit
 
 class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     private let kSectionNumber = 2
-    private let url = "http://localhost/SmartOrder/Smart-Order-Services/api/orders.php"
+//    private let url = "http://localhost/SmartOrder/Smart-Order-Services/api/orders.php"
+    private let url = "https://cryptic-mountain-25848.herokuapp.com/api/orders.php"
     var productNames = []
     var productQuantities = []
     @IBOutlet weak var tableView: UITableView!
