@@ -12,12 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var tableID: String?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let device_id = UIDevice.currentDevice().identifierForVendor?.UUIDString
-        print(device_id, "asdas")
+//        let device_id = UIDevice.currentDevice().identifierForVendor?.UUIDString
+
         return true
     }
 

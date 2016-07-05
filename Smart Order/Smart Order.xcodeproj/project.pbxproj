@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD1148601D2C1B8B006B5C51 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD11485F1D2C1B8B006B5C51 /* HistoryViewController.swift */; };
 		BD26D3991D239517007EF72D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD26D3981D239517007EF72D /* Category.swift */; };
 		BD26D39B1D239786007EF72D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD26D39A1D239786007EF72D /* Menu.swift */; };
 		BD26D39F1D239BE3007EF72D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD26D39E1D239BE3007EF72D /* CategoryViewController.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD11485F1D2C1B8B006B5C51 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		BD26D3981D239517007EF72D /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		BD26D39A1D239786007EF72D /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		BD26D39E1D239BE3007EF72D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				BD46EFDD1D217FEE00B94B51 /* ViewController.swift */,
 				BD26D39E1D239BE3007EF72D /* CategoryViewController.swift */,
 				BDE1F52F1D27BF5800B3E648 /* OrderViewController.swift */,
+				BD11485F1D2C1B8B006B5C51 /* HistoryViewController.swift */,
 				BDE1F53B1D27D36500B3E648 /* CustomCell */,
 				BDE1F5371D27C5F700B3E648 /* CustomView */,
 			);
@@ -369,6 +372,7 @@
 				BDE1F5361D27C5E200B3E648 /* QuantityCustomView.swift in Sources */,
 				BD26D3991D239517007EF72D /* Category.swift in Sources */,
 				BD46EFDC1D217FEE00B94B51 /* AppDelegate.swift in Sources */,
+				BD1148601D2C1B8B006B5C51 /* HistoryViewController.swift in Sources */,
 				BD46F0101D21881600B94B51 /* Order.swift in Sources */,
 				BDA55CAB1D24F09E00E7D1DA /* JsonParser.swift in Sources */,
 				BD832D901D2470770026E385 /* RequestManager.swift in Sources */,

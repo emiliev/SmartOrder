@@ -18,8 +18,9 @@ class JsonParser{
     
     func parse(){
         do {
+//            print(data)
             let json = try  NSJSONSerialization.JSONObjectWithData(self.data, options: .AllowFragments) as? NSDictionary
-            print(json)
+//            print(json)
             NSNotificationCenter.defaultCenter().postNotificationName("SmartOrderMenu", object: json)
         }
         catch{

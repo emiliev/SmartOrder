@@ -87,9 +87,7 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBAction func makeOrder(sender: AnyObject) {
     
         if(self.productNames.count == 0){
-            let alert = UIAlertController(title: title, message: "No products to order!", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
+            showAlert("No products to order")
         }else{
             
             //device id : >
@@ -108,9 +106,24 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
             catch let error as NSError{
                 print(error)
             }
+            
+            clearData()
+            showAlert("Successfully ordered!")
         }
     }
     
+    func clearData(){
+        Order.sharedInstance.clearCurrentOrder()
+        self.productNames = []
+        self.productQuantities = []
+        self.tableView.reloadData()
+    }
+    
+    func showAlert(text: String){
+        let alert = UIAlertController(title: title, message: text, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     
     /*
     // MARK: - Navigation

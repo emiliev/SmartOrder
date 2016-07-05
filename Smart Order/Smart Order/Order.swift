@@ -90,7 +90,10 @@ class Order{
         return list
     }
 
-    
+    func clearCurrentOrder(){
+        self.products.removeAll()
+        print(self.products.count)
+    }
     
     /*
      
