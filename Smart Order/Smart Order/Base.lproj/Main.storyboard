@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aad-yZ-v2h">
-                                <rect key="frame" x="-4" y="64" width="383" height="514"/>
+                                <rect key="frame" x="-4" y="0.0" width="383" height="578"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jWh-IN-8tZ">
                                     <size key="itemSize" width="114" height="115"/>
@@ -37,13 +37,13 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myL-Q8-4Jl">
                                                     <rect key="frame" x="0.0" y="184" width="179" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lJy-i6-byN">
+                                                <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lJy-i6-byN">
                                                     <rect key="frame" x="8" y="0.0" width="175" height="175"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="75" id="MrB-VO-M9D"/>
                                                         <constraint firstAttribute="width" constant="75" id="d9c-wG-xQ9"/>
@@ -67,9 +67,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="iIo-iv-F5b" firstAttribute="top" secondItem="aad-yZ-v2h" secondAttribute="bottom" constant="40" id="4eI-6e-JMe"/>
+                            <constraint firstItem="aad-yZ-v2h" firstAttribute="top" secondItem="aZS-0c-LmI" secondAttribute="topMargin" id="4gc-zG-FU3"/>
                             <constraint firstItem="aad-yZ-v2h" firstAttribute="leading" secondItem="aZS-0c-LmI" secondAttribute="leadingMargin" constant="-20" id="8ec-68-80U"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aad-yZ-v2h" secondAttribute="trailing" constant="-20" id="Ucl-5h-NnW"/>
-                            <constraint firstItem="aad-yZ-v2h" firstAttribute="top" secondItem="SRj-zo-5gy" secondAttribute="bottom" id="atx-au-fNE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gqG-t8-bqe"/>
@@ -100,13 +100,14 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdI-gp-jKv">
                                 <rect key="frame" x="-8" y="576" width="391" height="42"/>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="ZvH-Lu-6mk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Order">
-                                    <color key="titleColor" red="1" green="0.88573498039999998" blue="0.048488403800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="makeOrder:" destination="Wxm-ul-MgE" eventType="touchUpInside" id="MjD-sS-qxc"/>
@@ -203,11 +204,11 @@
             </objects>
             <point key="canvasLocation" x="1725.5" y="-112.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Menu-->
         <scene sceneID="cee-9a-Vtq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1am-cc-zxW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="6If-5I-dgX"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="book-icon" id="6If-5I-dgX"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hi3-7C-309">
@@ -266,7 +267,7 @@
         <scene sceneID="vup-uG-t0A">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QYV-Ry-bPk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="mostViewed" id="ipf-hb-Lbj"/>
+                    <tabBarItem key="tabBarItem" title="" systemItem="history" id="ipf-hb-Lbj"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w8b-uz-1Zf">
@@ -284,6 +285,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book-icon" width="25" height="25"/>
         <image name="shopping_cart" width="30" height="30"/>
     </resources>
 </document>

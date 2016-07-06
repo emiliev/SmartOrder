@@ -17,6 +17,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.navigationController!.navigationBar.topItem!.title = "Smart Order";
  
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
@@ -53,11 +55,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print(indexPath.row)
-    
         let curCategory = Menu.sharedInstance.categoryAtIndex(indexPath.row)
         let CategoryVC = storyboard?.instantiateViewControllerWithIdentifier("Category") as? CategoryViewController
         CategoryVC!.menu = curCategory
+        CategoryVC!.name = curCategory?.getName()
         self.navigationController?.pushViewController(CategoryVC!, animated: true)
     }
     
