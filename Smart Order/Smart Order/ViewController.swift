@@ -53,8 +53,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print(indexPath.row)
-    
         let curCategory = Menu.sharedInstance.categoryAtIndex(indexPath.row)
         let CategoryVC = storyboard?.instantiateViewControllerWithIdentifier("Category") as? CategoryViewController
         CategoryVC!.menu = curCategory
