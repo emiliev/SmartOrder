@@ -15,8 +15,10 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var productNames = []
     var productQuantities = []
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Order"
         self.tableView.dataSource = self
         self.tableView.delegate = self
         let orderNib = UINib(nibName: "OrderCustomCell", bundle: nil)
